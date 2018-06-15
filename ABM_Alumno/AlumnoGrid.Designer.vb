@@ -24,16 +24,16 @@ Partial Class AlumnoGrid
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.nuevo = New System.Windows.Forms.Button
+        Me.Nuevo = New System.Windows.Forms.Button
         Me.Modificar = New System.Windows.Forms.Button
         Me.Eliminar = New System.Windows.Forms.Button
         Me.Salir = New System.Windows.Forms.Button
-        Me.AlumnoCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NyaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.EdadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.NacimientoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.DniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.MailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.AlumnoCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlumnoCollectionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,20 +46,20 @@ Partial Class AlumnoGrid
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NyaDataGridViewTextBoxColumn, Me.EdadDataGridViewTextBoxColumn, Me.NacimientoDataGridViewTextBoxColumn, Me.DniDataGridViewTextBoxColumn, Me.MailDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.AlumnoCollectionBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(45, 25)
+        Me.DataGridView1.Location = New System.Drawing.Point(46, 22)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(545, 139)
+        Me.DataGridView1.Size = New System.Drawing.Size(573, 166)
         Me.DataGridView1.TabIndex = 0
         '
-        'nuevo
+        'Nuevo
         '
-        Me.nuevo.Location = New System.Drawing.Point(101, 212)
-        Me.nuevo.Name = "nuevo"
-        Me.nuevo.Size = New System.Drawing.Size(67, 30)
-        Me.nuevo.TabIndex = 1
-        Me.nuevo.Text = "nuevo"
-        Me.nuevo.UseVisualStyleBackColor = True
+        Me.Nuevo.Location = New System.Drawing.Point(101, 212)
+        Me.Nuevo.Name = "Nuevo"
+        Me.Nuevo.Size = New System.Drawing.Size(67, 30)
+        Me.Nuevo.TabIndex = 1
+        Me.Nuevo.Text = "Nuevo"
+        Me.Nuevo.UseVisualStyleBackColor = True
         '
         'Modificar
         '
@@ -87,10 +87,6 @@ Partial Class AlumnoGrid
         Me.Salir.TabIndex = 4
         Me.Salir.Text = "Salir"
         Me.Salir.UseVisualStyleBackColor = True
-        '
-        'AlumnoCollectionBindingSource
-        '
-        Me.AlumnoCollectionBindingSource.DataSource = GetType(ABM_Alumnos.AlumnoCollection)
         '
         'NyaDataGridViewTextBoxColumn
         '
@@ -127,15 +123,19 @@ Partial Class AlumnoGrid
         Me.MailDataGridViewTextBoxColumn.Name = "MailDataGridViewTextBoxColumn"
         Me.MailDataGridViewTextBoxColumn.ReadOnly = True
         '
+        'AlumnoCollectionBindingSource
+        '
+        Me.AlumnoCollectionBindingSource.DataSource = GetType(ABM_Alumnos.AlumnoCollection)
+        '
         'AlumnoGrid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(612, 440)
+        Me.ClientSize = New System.Drawing.Size(752, 478)
         Me.Controls.Add(Me.Salir)
         Me.Controls.Add(Me.Eliminar)
         Me.Controls.Add(Me.Modificar)
-        Me.Controls.Add(Me.nuevo)
+        Me.Controls.Add(Me.Nuevo)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "AlumnoGrid"
         Me.Text = "AlumnoGrid"
@@ -145,7 +145,7 @@ Partial Class AlumnoGrid
 
     End Sub
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents nuevo As System.Windows.Forms.Button
+    Friend WithEvents Nuevo As System.Windows.Forms.Button
     Friend WithEvents Modificar As System.Windows.Forms.Button
     Friend WithEvents Eliminar As System.Windows.Forms.Button
     Friend WithEvents Salir As System.Windows.Forms.Button

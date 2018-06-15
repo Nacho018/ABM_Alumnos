@@ -9,13 +9,19 @@
     Public Property nya() As String
 
         Get
+
             Return nya_
+
         End Get
+
+
         Set(ByVal value As String)
 
             nya_ = value
 
+
         End Set
+
     End Property
 
 
@@ -23,9 +29,12 @@
         Get
 
             edad_ = DateDiff(DateInterval.Year, nacimineto_, Now.Date)
+
             Return edad_
 
+
         End Get
+
     End Property
 
     Public Property nacimiento() As Date
@@ -42,7 +51,9 @@
 
             nacimineto_ = value
 
+
         End Set
+
     End Property
 
 
@@ -52,12 +63,15 @@
             Return dni_
 
         End Get
+
         Set(ByVal value As Integer)
 
             dni_ = value
 
 
+
         End Set
+
     End Property
 
 
@@ -69,6 +83,7 @@
         End Get
 
         Set(ByVal value As String)
+
             mail_ = value
 
         End Set

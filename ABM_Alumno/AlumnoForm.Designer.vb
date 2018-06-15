@@ -39,6 +39,7 @@ Partial Class AlumnoForm
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(151, 32)
+        Me.TextBox1.MaxLength = 20
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(143, 20)
         Me.TextBox1.TabIndex = 0
@@ -46,13 +47,15 @@ Partial Class AlumnoForm
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(151, 145)
+        Me.TextBox2.MaxLength = 10
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(144, 20)
         Me.TextBox2.TabIndex = 1
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(151, 69)
+        Me.TextBox3.Location = New System.Drawing.Point(152, 76)
+        Me.TextBox3.MaxLength = 10
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(143, 20)
         Me.TextBox3.TabIndex = 2
@@ -61,6 +64,7 @@ Partial Class AlumnoForm
         '
         Me.TextBox4.Location = New System.Drawing.Point(151, 213)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(140, 20)
         Me.TextBox4.TabIndex = 3
         '
@@ -85,9 +89,9 @@ Partial Class AlumnoForm
         Me.Fechaydireccion.AutoSize = True
         Me.Fechaydireccion.Location = New System.Drawing.Point(52, 148)
         Me.Fechaydireccion.Name = "Fechaydireccion"
-        Me.Fechaydireccion.Size = New System.Drawing.Size(85, 13)
+        Me.Fechaydireccion.Size = New System.Drawing.Size(58, 13)
         Me.Fechaydireccion.TabIndex = 6
-        Me.Fechaydireccion.Text = "Fechaydireccion"
+        Me.Fechaydireccion.Text = "nacimiento"
         '
         'DNI
         '
@@ -138,7 +142,7 @@ Partial Class AlumnoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(351, 411)
+        Me.ClientSize = New System.Drawing.Size(425, 411)
         Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Aceptar)
         Me.Controls.Add(Me.Mail)
